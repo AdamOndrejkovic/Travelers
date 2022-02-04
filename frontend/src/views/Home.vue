@@ -1,7 +1,8 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div>
+    <div class="intro">
+      <h1>Welcome to Travelers</h1>
+    </div>
   </div>
 </template>
 
@@ -16,3 +17,19 @@ import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 })
 export default class Home extends Vue {}
 </script>
+<style scoped>
+.intro {
+  background: url("../assets/images/background.jpg") center;
+  height: 50vh;
+  position: relative;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+}
+</style>
