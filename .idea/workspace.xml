@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Initial frontend setup">
-      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/css/tailwind.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/Blog.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/Contact.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/NotFound.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
+    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Home page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +86,18 @@
       <workItem from="1643977561161" duration="74000" />
       <workItem from="1643977829401" duration="40000" />
       <workItem from="1643977891584" duration="213000" />
+      <workItem from="1643988916398" duration="236000" />
+      <workItem from="1643989245991" duration="23000" />
+      <workItem from="1644435799649" duration="131000" />
     </task>
+    <task id="LOCAL-00001" summary="Home page">
+      <created>1643986727320</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643986727320</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial frontend setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial frontend setup" />
+    <MESSAGE value="Home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home page" />
   </component>
 </project>
