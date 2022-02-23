@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -50,7 +51,24 @@ namespace WebApplication1
 
             services.AddScoped<IArticleRepository, ArticleRepository>();
             services.AddScoped<IArticleService, ArticleService>();
-
+            
+            services.AddCors(options =>
+            {
+                options.AddPolicy("Dev-cors", policy =>
+                {
+                    policy
+                        .WithOrigins("http://localhost:4200")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+                options.AddPolicy("Prod-cors", policy =>
+                {
+                    policy
+                        .WithOrigins("https://pasbites-570e7.web.app")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,6 +79,11 @@ namespace WebApplication1
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApi v1"));
+                app.UseCors("Dev-cors");
+            }
+            else
+            {
+                app.UseCors("Prod-cors");
             }
 
             app.UseHttpsRedirection();

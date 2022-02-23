@@ -5,7 +5,11 @@ namespace DataAccess
 {
     public class TravelersDbContext: DbContext
     {
-        public TravelersDbContext(DbContextOptions<TravelersDbContext> options): base(options){}
+        public TravelersDbContext(DbContextOptions<TravelersDbContext> options) 
+            : base(options)
+        {
+            Database.EnsureCreated();
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {}

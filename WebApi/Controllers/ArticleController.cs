@@ -8,11 +8,11 @@ namespace WebApplication1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase
+    public class ArticleController : ControllerBase
     {
         private readonly IArticleService _service;
 
-        public ProductController(IArticleService service)
+        public ArticleController(IArticleService service)
         {
             _service = service ?? throw new InvalidDataException("Article service can not be null");
         }

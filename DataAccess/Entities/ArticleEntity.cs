@@ -5,7 +5,7 @@
         public int Id { get; set; }
         public string Title { get; set; }
         public string MainText { get; set; }
-        public double SubText { get; set; }
-        public double Image { get; set; }
+        public string SubText { get; set; }
+        public string Image { get; set; }
     }
 }
