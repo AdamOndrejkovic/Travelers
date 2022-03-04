@@ -57,14 +57,14 @@ namespace WebApplication1
                 options.AddPolicy("Dev-cors", policy =>
                 {
                     policy
-                        .WithOrigins("http://localhost:4200")
+                        .WithOrigins("http://localhost:8080")
                         .AllowAnyHeader()
                         .AllowAnyMethod();
                 });
                 options.AddPolicy("Prod-cors", policy =>
                 {
                     policy
-                        .WithOrigins("https://pasbites-570e7.web.app")
+                        .WithOrigins("")
                         .AllowAnyHeader()
                         .AllowAnyMethod();
                 });

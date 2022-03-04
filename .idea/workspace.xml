@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Home page">
+      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/blog/BlogArticle.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/blog/BlogList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/types/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/types/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/DataAccess.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/DataAccess.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net5.0/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net5.0/WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/bin/Debug/net5.0/WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/bin/Debug/net5.0/WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/obj/Debug/net5.0/WebApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net5.0/WebApi.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/obj/Debug/net5.0/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net5.0/WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/obj/Debug/net5.0/WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net5.0/WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/About.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Blog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Blog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Contact.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Contact.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/NotFound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/NotFound.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="TypeScript File" />
         <option value="Vue Single File Component" />
       </list>
     </option>
@@ -47,6 +75,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\adamo\RiderProjects\Travelers\frontend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -58,7 +87,17 @@
       <recent name="C:\Users\adamo\RiderProjects\Travelers\frontend\src\assets\images" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.serve">
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/frontend/package.json" />
       <command value="run" />
@@ -72,6 +111,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.serve" />
+        <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
   </component>
@@ -89,6 +129,13 @@
       <workItem from="1643988916398" duration="236000" />
       <workItem from="1643989245991" duration="23000" />
       <workItem from="1644435799649" duration="131000" />
+      <workItem from="1645610497587" duration="606000" />
+      <workItem from="1646313943558" duration="1354000" />
+      <workItem from="1646327119948" duration="748000" />
+      <workItem from="1646331064795" duration="665000" />
+      <workItem from="1646392382984" duration="6625000" />
+      <workItem from="1646402376168" duration="156000" />
+      <workItem from="1646402551061" duration="243000" />
     </task>
     <task id="LOCAL-00001" summary="Home page">
       <created>1643986727320</created>
