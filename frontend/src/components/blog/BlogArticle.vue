@@ -1,16 +1,15 @@
 <template>
   <section>
-    <h2>{{article.title}}</h2>
-    <p>{{article.mainText}}</p>
-    <p>{{article.subText}}</p>
-    <p>{{article.image}}</p>
-
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.mainText }}</p>
+    <p>{{ article.subText }}</p>
+    <p>{{ article.image }}</p>
   </section>
 </template>
 
 <script lang="ts">
-import {defineComponent} from "vue";
-import { Article } from "../../types/types"
+import { defineComponent } from "vue";
+import { Article } from "../../types/types";
 
 export default defineComponent({
   props: {
@@ -20,15 +19,13 @@ export default defineComponent({
     },
   },
   setup() {
-    const info = "123"
-    return{
-      info,
-    }
-  }
+    const info = "123";
 
-})
+    return {
+      info,
+    };
+  },
+});
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
