@@ -7,6 +7,9 @@ pipeline {
         COMMITMSG = sh(returnStdout: true, script: "git log -1 --oneline")
     }
     stages {
+        stage("Start up"){
+            buildDescription env.COMMITMSG
+        }
         stage("Build"){
             steps {
                 echo "We are building"
