@@ -20,15 +20,15 @@ pipeline {
         }
         stage("Test"){
             steps {
-                echo "We are testing"
-                sh "dotnet add package coverlet.collector"
-                sh "dotnet test --collect:'XPlat Code Coverage'"
-            }
-            post {
-                success {
-                    archiveArtifacts "Domain.Test/TestResults/*/"
-                    archiveArtifacts "Core.Test/TestResults/*/"
+                    dir("Core.Test") {
+                        sh "dotnet add package coverlet.collector"
+                        sh "dotnet test --collect:'XPlat Code Coverage'"
+                    }
                 }
+                post {
+                    success {
+                        publishCoverage adapters: [coberturaAdapter(path: "Core.Test/TestResults/*/coverage.cobertura.xml")]
+                    }
             }
         }
         stage("Deploy"){
