@@ -1,10 +1,5 @@
 pipeline {
-    agent{
-        node{
-            label 'master'
-            customWorkspace "${JENKINS_HOME}/Workspace/${URLDecoder.decode(JOB_NAME)}"
-        }
-    }
+    agent any
     triggers {
         pollSCM("* * * * *")
     }
