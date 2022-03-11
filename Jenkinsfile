@@ -3,11 +3,14 @@ pipeline {
     triggers {
         pollSCM("* * * * *")
     }
+    environment {
+        COMMITMSG = sh(returnStdout: true, scripts: "git log -1 --oneline")
+    }
     stages {
         stage("Build"){
             steps {
                 echo "We are building"
-                sh "dotnet build WebApi.csproj "
+                sh "dotnet build WebApi/WebApi.csproj"
             }
         }
         stage("Test"){
