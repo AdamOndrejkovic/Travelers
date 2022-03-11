@@ -8,7 +8,9 @@ pipeline {
     }
     stages {
         stage("Start up"){
-            buildDescription env.COMMITMSG
+            steps {
+                buildDescription env.COMMITMSG
+            }
         }
         stage("Build"){
             steps {
