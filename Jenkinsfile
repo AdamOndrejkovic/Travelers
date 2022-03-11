@@ -4,7 +4,7 @@ pipeline {
         pollSCM("* * * * *")
     }
     environment {
-        COMMITMSG = sh(returnStdout: true, scripts: "git log -1 --oneline")
+        COMMITMSG = sh(returnStdout: true, script: "git log -1 --oneline")
     }
     stages {
         stage("Build"){
