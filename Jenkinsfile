@@ -27,7 +27,7 @@ pipeline {
                 }
                 post {
                     success {
-                        publishCoverage adapters: [coberturaAdapter(path: "Core.Test/TestResults/*/coverage.cobertura.xml")]
+                        publishCoverage adapters: [coberturaAdapter('Core.Test/TestResults/*/coverage.cobertura.xml')], sourceFileResolver: sourceFiles('NEVER_STORE')
                     }
             }
         }
