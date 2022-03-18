@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Update jenkins">
-      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Discord Integration">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core.Test/obj/Debug/net5.0/Core.Test.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Test/obj/Debug/net5.0/Core.Test.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain.Test/obj/Debug/net5.0/Domain.Test.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Domain.Test/obj/Debug/net5.0/Domain.Test.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +131,7 @@
       <workItem from="1647525086747" duration="10000" />
       <workItem from="1647534458053" duration="1000" />
       <workItem from="1647601716407" duration="19000" />
-      <workItem from="1647602290669" duration="808000" />
+      <workItem from="1647602290669" duration="1735000" />
     </task>
     <task id="LOCAL-00001" summary="Home page">
       <created>1643986727320</created>
@@ -214,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647515567004</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Discord Integration">
+      <created>1647603126673</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1647603126673</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +242,7 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Test" />
     <MESSAGE value="Update jenkins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update jenkins" />
+    <MESSAGE value="Discord Integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Discord Integration" />
   </component>
 </project>

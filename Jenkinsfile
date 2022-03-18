@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage("Start up"){
             steps {
-                discordSend description: "Jenkins Pipeline Start", footer: "Begin", link: env.Build_URL, webhookURL: 'https://discord.com/api/webhooks/951842111462981632/VgXVmyphYbRqnRZ3Q2NAvvo0PIT7v07GHz6usJ8DIXUt0VY4OP937ZaWn_idF5R-abtw'
+                discordSend description: "Jenkins Pipeline Start", footer: env.COMMITMSG , link: env.Build_URL, webhookURL: 'https://discord.com/api/webhooks/951842111462981632/VgXVmyphYbRqnRZ3Q2NAvvo0PIT7v07GHz6usJ8DIXUt0VY4OP937ZaWn_idF5R-abtw'
                 buildDescription env.COMMITMSG
             }
         }
@@ -41,7 +41,23 @@ pipeline {
     post {
         always {
             sh "echo 'Pipeline finished!'"
-            discordSend description: "Jenkins Pipeline Start", footer: "Begin", link: env.Build_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: ''
+            discordSend description: "Jenkins Pipeline Finished", footer: "The pipeline has finished!", link: env.Build_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: 'https://discord.com/api/webhooks/951842111462981632/VgXVmyphYbRqnRZ3Q2NAvvo0PIT7v07GHz6usJ8DIXUt0VY4OP937ZaWn_idF5R-abtw'
+        }
+        success {
+            sh "echo 'Pipeline finished!'"
+            discordSend description: "Jenkins Pipeline Success", footer: "Pipeline finished successfully", link: env.Build_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: 'https://discord.com/api/webhooks/951842111462981632/VgXVmyphYbRqnRZ3Q2NAvvo0PIT7v07GHz6usJ8DIXUt0VY4OP937ZaWn_idF5R-abtw'
+        }
+        failure {
+            sh "echo 'Pipeline finished!'"
+            discordSend description: "Jenkins Pipeline Failed", footer: "Pipeline failed", link: env.Build_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: 'https://discord.com/api/webhooks/951842111462981632/VgXVmyphYbRqnRZ3Q2NAvvo0PIT7v07GHz6usJ8DIXUt0VY4OP937ZaWn_idF5R-abtw'
+        }
+        unstable {
+           sh "echo 'Pipeline finished!'"
+           discordSend description: "Jenkins Pipeline Unstable", footer: "Pipeline marked unstable", link: env.Build_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: 'https://discord.com/api/webhooks/951842111462981632/VgXVmyphYbRqnRZ3Q2NAvvo0PIT7v07GHz6usJ8DIXUt0VY4OP937ZaWn_idF5R-abtw'
+        }
+        changed {
+           sh "echo 'Pipeline finished!'"
+           discordSend description: "Jenkins Pipeline Changed", footer: "Pipeline's state changed", link: env.Build_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: 'https://discord.com/api/webhooks/951842111462981632/VgXVmyphYbRqnRZ3Q2NAvvo0PIT7v07GHz6usJ8DIXUt0VY4OP937ZaWn_idF5R-abtw'
         }
     }
 }
