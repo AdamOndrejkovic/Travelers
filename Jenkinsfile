@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage("Start up"){
             steps {
+                discordSend description: "Jenkins Pipeline Start", footer: "Begin", link: env.Build_URL, webhookURL: 'https://discord.com/api/webhooks/951842111462981632/VgXVmyphYbRqnRZ3Q2NAvvo0PIT7v07GHz6usJ8DIXUt0VY4OP937ZaWn_idF5R-abtw'
                 buildDescription env.COMMITMSG
             }
         }
@@ -35,6 +36,12 @@ pipeline {
             steps {
                  echo "We are deploying"
             }
+        }
+    }
+    post {
+        always {
+            sh "echo 'Pipeline finished!'"
+            discordSend description: "Jenkins Pipeline Start", footer: "Begin", link: env.Build_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: ''
         }
     }
 }

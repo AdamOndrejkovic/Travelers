@@ -86,7 +86,7 @@ namespace WebApplication1
                 app.UseCors("Prod-cors");
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

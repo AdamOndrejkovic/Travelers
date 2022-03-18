@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Test">
+    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Update jenkins">
+      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Test/obj/Debug/net5.0/Core.Test.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Test/obj/Debug/net5.0/Core.Test.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain.Test/obj/Debug/net5.0/Domain.Test.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Domain.Test/obj/Debug/net5.0/Domain.Test.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +66,17 @@
       <recent name="C:\Users\adamo\RiderProjects\Travelers\frontend\src\assets\images" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.serve">
+  <component name="RunManager" selected="Docker.WebApi/Dockerfile">
+    <configuration name="WebApi/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="contextFolderPath" value="$PROJECT_DIR$" />
+          <option name="sourceFilePath" value="WebApi/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/frontend/package.json" />
       <command value="run" />
@@ -83,6 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.WebApi/Dockerfile" />
         <item itemvalue="npm.serve" />
         <item itemvalue="npm.lint" />
       </list>
@@ -113,6 +130,12 @@
       <workItem from="1647001131464" duration="4695000" />
       <workItem from="1647008586212" duration="197000" />
       <workItem from="1647173801825" duration="14000" />
+      <workItem from="1647515468786" duration="705000" />
+      <workItem from="1647521999718" duration="2609000" />
+      <workItem from="1647525086747" duration="10000" />
+      <workItem from="1647534458053" duration="1000" />
+      <workItem from="1647601716407" duration="19000" />
+      <workItem from="1647602290669" duration="808000" />
     </task>
     <task id="LOCAL-00001" summary="Home page">
       <created>1643986727320</created>
@@ -184,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647008768547</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update jenkins">
+      <created>1647515567004</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1647515567004</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +238,7 @@
     <MESSAGE value="Fix" />
     <MESSAGE value="Update" />
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Update jenkins" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update jenkins" />
   </component>
 </project>
