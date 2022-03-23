@@ -13,3 +13,15 @@ services:
     container_name: "travelers-api"
     ports:
       - "8081:80"
+    depends_on:
+      - "db"
+  db:
+    image: "mcr.microsoft.com/mssql/server"
+    container_name: "travelers-db-container"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=yourStrongP@ssword
+    ports:
+      - "8092:1433"
+    volumes:
+      - travelers:/var/opt/mssql:rw

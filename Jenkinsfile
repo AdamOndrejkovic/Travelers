@@ -13,13 +13,23 @@ pipeline {
                 buildDescription env.COMMITMSG
             }
         }
-        stage("Build"){
+        stage("Build Api"){
+            when {
+                anyOf {
+                    changeset "WebApi/**"
+                    changeset "Domain.Test/**"
+                    changeset "Domain/**"
+                    changeset "DataAccess/**"
+                    changeset "Core.Test/**"
+                    changeset "Core/**"
+                }
+            }
             steps {
                 echo "We are building"
                 sh "dotnet build WebApi/WebApi.csproj"
             }
         }
-        stage("Test"){
+        stage("Unit Test"){
             steps {
                     dir("Core.Test") {
                         sh "dotnet add package coverlet.collector"
@@ -32,9 +42,19 @@ pipeline {
                     }
             }
         }
+        stage("Clean containers") {
+            steps {
+                script {
+                    try {
+                        sh "docker-compose down"
+                    }
+                    finally { }
+                }
+            }
+        }
         stage("Deploy"){
             steps {
-                 echo "We are deploying"
+                 sh "docker-compose up -d"
             }
         }
     }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Discord Integration">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="docker-compose.yml added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +131,8 @@
       <workItem from="1647525086747" duration="10000" />
       <workItem from="1647534458053" duration="1000" />
       <workItem from="1647601716407" duration="19000" />
-      <workItem from="1647602290669" duration="1735000" />
+      <workItem from="1647602290669" duration="1897000" />
+      <workItem from="1648062300497" duration="469000" />
     </task>
     <task id="LOCAL-00001" summary="Home page">
       <created>1643986727320</created>
@@ -217,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647603126673</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="docker-compose.yml added">
+      <created>1647604048464</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1647604048464</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +251,7 @@
     <MESSAGE value="Test" />
     <MESSAGE value="Update jenkins" />
     <MESSAGE value="Discord Integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Discord Integration" />
+    <MESSAGE value="docker-compose.yml added" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker-compose.yml added" />
   </component>
 </project>
