@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="docker-compose.yml added">
+    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Jenkins file and docker-compose.yml updated">
+      <change afterPath="$PROJECT_DIR$/config/Prod.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/Test.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
@@ -132,7 +134,9 @@
       <workItem from="1647534458053" duration="1000" />
       <workItem from="1647601716407" duration="19000" />
       <workItem from="1647602290669" duration="1897000" />
-      <workItem from="1648062300497" duration="469000" />
+      <workItem from="1648062300497" duration="981000" />
+      <workItem from="1648120393739" duration="270000" />
+      <workItem from="1648121466014" duration="554000" />
     </task>
     <task id="LOCAL-00001" summary="Home page">
       <created>1643986727320</created>
@@ -225,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647604048464</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Jenkins file and docker-compose.yml updated">
+      <created>1648062887286</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1648062887286</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +263,7 @@
     <MESSAGE value="Update jenkins" />
     <MESSAGE value="Discord Integration" />
     <MESSAGE value="docker-compose.yml added" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker-compose.yml added" />
+    <MESSAGE value="Jenkins file and docker-compose.yml updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jenkins file and docker-compose.yml updated" />
   </component>
 </project>
