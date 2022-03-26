@@ -1,7 +1,7 @@
 pipeline {
     agent any
     triggers {
-        pollSCM("* * * * *")
+        pollSCM("*/5 * * * *")
     }
     environment {
         COMMITMSG = sh(returnStdout: true, script: "git log -1 --oneline")
