@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Jenkins file and docker-compose.yml updated">
-      <change afterPath="$PROJECT_DIR$/config/Prod.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/Test.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Prod.env" beforeDir="false" afterPath="$PROJECT_DIR$/config/Prod.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Test.env" beforeDir="false" afterPath="$PROJECT_DIR$/config/Test.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +136,9 @@
       <workItem from="1648062300497" duration="981000" />
       <workItem from="1648120393739" duration="270000" />
       <workItem from="1648121466014" duration="554000" />
+      <workItem from="1648213403521" duration="39000" />
+      <workItem from="1648300211088" duration="636000" />
+      <workItem from="1648300936207" duration="902000" />
     </task>
     <task id="LOCAL-00001" summary="Home page">
       <created>1643986727320</created>
@@ -236,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648062887286</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Jenkins file and docker-compose.yml updated">
+      <created>1648213430921</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1648213430921</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

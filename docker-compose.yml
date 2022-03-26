@@ -4,17 +4,21 @@ services:
   web:
     build:
       context: "frontend"
+    image: "localhost:8080/travelers:${IMAGE_TAG}"
     container_name: "${WEB_CONT_NAME}"
     ports:
       - "${WEB_PORT}:80"
   api:
     build:
       context: "WebApi"
-    container_name: "travelers-api"
+    image: "localhost:3000/travelers:${IMAGE_TAG}"
+    container_name: "${API_CONT_NAME}"
     ports:
       - "${API_PORT}:80"
     depends_on:
       - "db"
+    environment:
+      - DB_CONNECTION_STRING=Server=${DB_CONT_NAME},1433;Initial Catalog=WeatherForecast;User ID=sa;Password=yourStrongP@ssword;MultipleActiveResultSets=True;
   db:
     image: "mcr.microsoft.com/mssql/server"
     container_name: "${DB_CONT_NAME}"
@@ -22,6 +26,8 @@ services:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=yourStrongP@ssword
     ports:
-      - "8092:1433"
+      - "${DB_PORT}:1433"
     volumes:
       - travelers:/var/opt/mssql:rw
+volumes:
+    travelers:
