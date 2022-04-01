@@ -8,6 +8,17 @@ pipeline {
     }
     stages {
         stage("Start up"){
+            when {
+                anyOf {
+                    changeset "WebApi/**"
+                    changeset "Domain.Test/**"
+                    changeset "Domain/**"
+                    changeset "DataAccess/**"
+                    changeset "Core.Test/**"
+                    changeset "Core/**"
+                    changeset "frontend/**"
+                }
+            }
             steps {
                 withCredentials([string(credentialsId: 'DiscordWebHook', variable: 'WEBHOOK_URL')]) {
                     discordSend description: "Jenkins Pipeline Start", footer: env.COMMITMSG , link: env.Build_URL, webhookURL: "${WEBHOOK_URL}"
