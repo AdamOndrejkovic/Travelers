@@ -39,7 +39,7 @@ pipeline {
             }
             steps {
                 echo "We are building"
-                sh "dotnet build WebApi/WebApi.csproj"
+                sh "dotnet build --configuration Release WebApi/WebApi.csproj"
                 sh "docker-compose --env-file config/Test.env build api"
             }
         }
