@@ -26,6 +26,14 @@ pipeline {
                 }
             }
         }
+        stage("Build frontend"){
+                    when {
+                        changeset "frontend/**"
+                    }
+                    steps {
+                        sh "docker-compose --env-file config/Test.env build frontend"
+                    }
+                }
         stage("Build Api"){
             when {
                 anyOf {
@@ -39,7 +47,9 @@ pipeline {
             }
             steps {
                 echo "We are building"
-                sh "dotnet build --configuration Release WebApi/WebApi.csproj"
+                dir("WebApi"){
+                    sh "dotnet build --configuration Release"
+                }
                 sh "docker-compose --env-file config/Test.env build api"
             }
         }
@@ -60,7 +70,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        sh "docker-compose down"
+                        sh "docker-compose --env-file config/Test.env down"
                     }
                     finally { }
                 }
@@ -68,7 +78,12 @@ pipeline {
         }
         stage("Deploy"){
             steps {
-                 sh "docker-compose up -d"
+                 sh "docker-compose --env-file config/Test.env up -d"
+            }
+        }
+        stage("Push images to registry") {
+             steps {
+                sh "docker-compose --env-file config/Test.env push"
             }
         }
     }
