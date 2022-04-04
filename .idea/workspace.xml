@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Jenkins">
-      <change beforePath="$PROJECT_DIR$/Core/Models/Article.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Models/Article.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Jenkins" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +144,7 @@
       <workItem from="1648300211088" duration="636000" />
       <workItem from="1648300936207" duration="1737000" />
       <workItem from="1648312938594" duration="1501000" />
-      <workItem from="1648817940540" duration="783000" />
+      <workItem from="1648817940540" duration="1344000" />
     </task>
     <task id="LOCAL-00001" summary="Home page">
       <created>1643986727320</created>
@@ -274,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648818062826</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Jenkins">
+      <created>1648819017566</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1648819017566</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
