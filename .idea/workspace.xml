@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Jenkins">
+    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Jenkins and Docker Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +60,10 @@
       <recent name="C:\Users\adamo\RiderProjects\Travelers\frontend\src\assets\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.frontend/Dockerfile">
+  <component name="RunManager" selected="Docker.WebApi/Dockerfile">
     <configuration name="WebApi/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
-          <option name="buildOnly" value="true" />
           <option name="contextFolderPath" value="$PROJECT_DIR$" />
           <option name="sourceFilePath" value="WebApi/Dockerfile" />
         </settings>
@@ -103,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.frontend/Dockerfile" />
         <item itemvalue="Docker.WebApi/Dockerfile" />
+        <item itemvalue="Docker.frontend/Dockerfile" />
         <item itemvalue="npm.serve" />
         <item itemvalue="npm.lint" />
       </list>
@@ -149,7 +146,7 @@
       <workItem from="1648300936207" duration="1737000" />
       <workItem from="1648312938594" duration="1501000" />
       <workItem from="1648817940540" duration="1344000" />
-      <workItem from="1649069693286" duration="386000" />
+      <workItem from="1649069693286" duration="1357000" />
     </task>
     <task id="LOCAL-00001" summary="Home page">
       <created>1643986727320</created>
@@ -284,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648819017566</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Jenkins and Docker Update">
+      <created>1649070163424</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1649070163424</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +318,7 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Every 5 minutes" />
     <MESSAGE value="Jenkins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkins" />
+    <MESSAGE value="Jenkins and Docker Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jenkins and Docker Update" />
   </component>
 </project>
