@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Jenkins and Docker Update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c02b5249-2880-42ad-9b48-e4f5017c3781" name="Changes" comment="Jenkins and Docker Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,6 +145,7 @@
       <workItem from="1648312938594" duration="1501000" />
       <workItem from="1648817940540" duration="1344000" />
       <workItem from="1649069693286" duration="1357000" />
+      <workItem from="1649166830726" duration="700000" />
     </task>
     <task id="LOCAL-00001" summary="Home page">
       <created>1643986727320</created>
@@ -288,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649070163424</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Jenkins and Docker Update">
+      <created>1649166928525</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1649166928526</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
