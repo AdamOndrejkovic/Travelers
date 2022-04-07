@@ -6,7 +6,6 @@
         public string Title { get; set; }
         public string MainText { get; set; }
         public string SubText { get; set; }
-        /* Url image */
         public string Image { get; set; }
     }
 }
